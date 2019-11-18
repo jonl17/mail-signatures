@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Signatures</title>
+  </head>
+  <style>
+    body {
+      height: 90px;
+      width: 360px;
+    }
+    p {
+      font-size: 9px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 0.6fr;
+      box-sizing: border-box;
+      padding: 10px;
+      background: white;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      margin: 0;
+    }
+    .inner-container {
+      display: grid;
+    }
+    #left {
+      grid-template-columns: 54px auto;
+      border-bottom: 2px solid #28a078;
+      border-right: 2px solid #28a078;
+    }
+    #right {
+      border-bottom: 2px solid #28a078;
+      padding-left: 10px;
+      color: #28a078;
+      position: relative;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+    #nafn {
+      font-weight: bold;
+    }
+    #titill {
+      font-weight: bold;
+    }
+    .titlar {
+      font-size: 11px;
+    }
+    #url {
+      position: absolute;
+      bottom: 0;
+      padding: 0 0 10px 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="left" class="inner-container">
+        <img
+          src="https://i.postimg.cc/2S09m9Zr/Hallbjorn-sm.jpg"
+          border="0"
+          alt="hrafnkell"
+        />
+        <div class="info">
+          <div id="group1">
+            <p class="titlar" id="nafn">Hallbjörn R. Hallbjörnsson</p>
+            <p id="starf">Samgönguverkfræðingur</p>
+          </div>
+          <div id="group2">
+            <p id="email">hallbjorn@borgarlinan.is</p>
+            <p id="numer">+354 891 8399</p>
+          </div>
+        </div>
+      </div>
+      <div id="right" class="inner-container">
+        <div id="group3">
+          <p class="titlar" id="titill">Borgarlínan</p>
+          <p id="slagord">Beinustu leið til framtíðar</p>
+        </div>
+        <p id="url">borgarlinan.is</p>
+      </div>
+    </div>
+  </body>
+</html>
